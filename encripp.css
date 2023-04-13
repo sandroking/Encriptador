@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0; 
+  }
+
+body {
+    background-color: #eee;
+}
+
+.main-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.container {
+    background-color: #F3F5FC;
+    width: 80%;
+    border-radius: 20px;
+    -webkit-box-shadow: -1px 0px 37px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 0px 37px -4px rgba(0,0,0,0.75);
+    box-shadow: -1px 0px 37px -4px rgba(0,0,0,0.75);
+}
+
+img {
+    margin-top: 40px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 80vh;
+    margin: 2rem;
+}
+
+.part1 {
+    width: 60%;
+    margin-right: 20px;
+}
+
+#input-text {
+    background-color: #F3F5FC;
+    width: 90%;
+    height: 80%;
+    resize: none;
+    margin: auto;
+    text-align: center;
+    border: none;
+    color: #e95b48;
+    font-size: 22px;
+    outline: none;
+}
+
+p {
+    margin-right: 36%;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+#btnEncrypt  {
+    font-size: 18px;
+    width: 300px;
+    margin-right: 10px;
+    padding: 15px 0 15px 0;
+    border-radius: 24px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+#btnEncrypt:hover {
+    background-color: white;
+    border: 2px solid red;
+    color: red;
+}
+
+#btnDecrypt {
+    font-size: 18px;
+    width: 300px;
+    padding: 15px 0 15px 0;
+    margin-left: 10px;
+    border: 2px solid red;
+    border-radius: 24px;   
+    color: red;
+}
+
+#btnDecrypt:hover {
+    border: none;
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+}
+
+.part2 {
+    position: relative;
+}
+
+#show-text {
+    background-color: #fff;
+    width: 85%;
+    height: 100%;
+    resize: none;
+    margin: auto;
+    padding: 5px;
+    padding-top: 10px;
+    text-align: center;
+    border: none;
+    color: #e95b48;
+    font-size: 20px;
+    outline: none;
+    border-radius: 14px;
+    -webkit-box-shadow: -1px 0px 37px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 0px 37px -4px rgba(0,0,0,0.75);
+    box-shadow: -1px 0px 37px -4px rgba(0,0,0,0.75);
+}
+
+#btnCopy {
+    font-size: 18px;
+    width: 200px;
+    padding: 15px 0 15px 0;
+    border: 2px solid red;
+    border-radius: 24px;   
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 4.5rem;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#btnCopy:hover {
+    border: none;
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+}
+
+.image-container {
+  position: absolute;
+  top: 8rem;
+  left: 0;
+}
+.image-container img {
+  margin: auto;
+}
+
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.main-header {
+  background-color: #F3F5FC;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+  
+}
+
+.social { 
+  margin: 0;
+  width: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor:pointer;
+}
+
+.autor-name {
+    font-size: 28px;
+    font-family: monospace;
+    font-weight:bold;
+    color: red;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 1370px) {
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 88%;
+    }
+    .image-container img {
+        width: 260px;
+    }
+
+    #btnCopy {
+        left: 4rem;
+        width: 160px;
+        padding: 12px 0 12px 0;
+    }
+}
+@media screen and (max-width: 1090px) {
+   
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      width: 100%;
+      margin: 0;
+      margin-top: 20px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  #image{
+    display: none;
+  }
+
+  .part1 {      
+      margin: 0;
+      width: 90%
+  }
+
+  .part2 {
+      margin-top: 2rem;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+  }
+
+  #input-text {
+      width: 100%;
+      height: 30vh;
+  }
+
+  .image-container {
+      position: absolute;
+      top: 2rem;
+      left: 6%;
+  }
+
+  #btnCopy {
+      left: 40%;
+  }
+}
+ 
+
+@media screen and (max-width: 520px) {
+    .logo {
+        width: 100px
+    }
+
+    #input-text {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .advertencia {
+        margin-right: 5px;
+    }
+
+    #btnEncrypt {
+        font-size: 15px;
+        width: 200px;
+        padding: 10px 0 10px 0;
+    }
+
+    #btnDecrypt {
+        font-size: 15px;
+        width: 200px;
+        padding: 10px 0 10px 0;
+    }
+
+    #show-text {
+        font-size: 15px;
+    }
+
+    .part2  {
+        margin-bottom: 6rem;
+    }
+
+    #btnCopy {
+        font-size: 15px;
+        width: 200px;
+        padding: 10px 0 10px 0;
+        left: 25%;
+        margin-bottom: -70px
+    }
+
+    @media screen and (max-width: 520px) {
+        #btnCopy {
+            left: 16%;
+        }
+
+        .autor-name {
+            font-size: 18px;
+        }
+
+        .social-container {
+            width: 40%;
+        }
+
+        .social {
+            width: 30px;
+        }
+    }
+}
